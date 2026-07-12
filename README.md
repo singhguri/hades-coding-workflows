@@ -44,13 +44,15 @@ from "database error."
 
 ### As a Hermes Plugin (recommended)
 
-Clone into your Hermes plugins directory:
-
 ```bash
-git clone https://github.com/singhguri/hades-coding-workflows ~/.hermes/plugins/hades-coding-workflows
+# 1. Install the plugin
+hermes plugins install singhguri/hades-coding-workflows --enable
+
+# 2. Restart gateway (if running)
+hermes gateway restart
 ```
 
-Restart Hermes (or start a new session). Skills are available as:
+Restart your session (or start a new one). Skills are available as:
 
 ```
 skill_view("hades-coding-workflows:dual-model-harness")
